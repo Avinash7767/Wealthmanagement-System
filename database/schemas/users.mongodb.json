@@ -1,0 +1,12 @@
+{
+  "bsonType": "object",
+  "required": ["email", "password", "name"],
+  "properties": {
+    "_id": { "bsonType": "objectId" },
+    "email": { "bsonType": "string", "pattern": "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$" },
+    "password": { "bsonType": "string" },
+    "name": { "bsonType": "string" },
+    "createdAt": { "bsonType": "date" },
+    "updatedAt": { "bsonType": "date" }
+  }
+}

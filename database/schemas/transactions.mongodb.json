@@ -1,0 +1,14 @@
+{
+  "bsonType": "object",
+  "required": ["userId", "type", "amount", "date"],
+  "properties": {
+    "_id": { "bsonType": "objectId" },
+    "userId": { "bsonType": "objectId" },
+    "type": { "bsonType": "string", "enum": ["income", "expense", "transfer"] },
+    "amount": { "bsonType": "decimal" },
+    "category": { "bsonType": "string" },
+    "description": { "bsonType": "string" },
+    "date": { "bsonType": "date" },
+    "createdAt": { "bsonType": "date" }
+  }
+}

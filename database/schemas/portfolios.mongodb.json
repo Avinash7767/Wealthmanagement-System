@@ -1,0 +1,22 @@
+{
+  "bsonType": "object",
+  "required": ["userId", "name"],
+  "properties": {
+    "_id": { "bsonType": "objectId" },
+    "userId": { "bsonType": "objectId" },
+    "name": { "bsonType": "string" },
+    "totalValue": { "bsonType": "decimal" },
+    "assets": {
+      "bsonType": "array",
+      "items": {
+        "bsonType": "object",
+        "properties": {
+          "symbol": { "bsonType": "string" },
+          "quantity": { "bsonType": "decimal" },
+          "currentPrice": { "bsonType": "decimal" }
+        }
+      }
+    },
+    "createdAt": { "bsonType": "date" }
+  }
+}
